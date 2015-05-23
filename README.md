@@ -9,16 +9,16 @@ R file *run_analytics.R* can be executed after putting dataset in the working di
 
 Following steps have been performed to clean and create a Tidy dataset :-
 - Copy Samsung Data set into the working directory
+- Import required library dplyr and data.table
 - Read both Training and Test data set, subjects, activity labels into R objects
 - Appropriately labels the data set with descriptive variable names using colnames 
-- Add subjects details to x_test and x_train objects
-- Add Activity details to x_test and x_train objects
-- Merge both Test and Training dataset into one oject
+- Add subjects details to x_test and x_train objects as a new variable in a data frame using cbind
+- Add Activity details to x_test and x_train objects as a new variable in a data frame using cbind
+- Merge both Test and Training dataset into one object using rbind
 - Join Merged dataset with Activity labels  using left_join on Activity ID - This will help all activity to use Activity Labels instead of IDs
-- Search all column with colnames include word "mean" OR "std" i.e. Average and Standard Deviation 
-- Add "SubjectID", "ActivityLabelName" and all mean and std column 
-- Assign a groupby function for "SubjectID" and "ActivityLabelName" and calculate the mean for rest of the columns using summarise each
-
+- Search all columns where heading includes word "mean" OR "std" i.e. Average and Standard Deviation 
+- Add "SubjectID", "ActivityLabelName" and all mean and std column  in to the new data frame
+- Assign a groupby function for "SubjectID" and "ActivityLabelName" and calculate the mean for rest of the columns using summarise each function
 
 
 The Tiday dataset includes the following files:
