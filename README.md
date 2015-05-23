@@ -7,7 +7,7 @@ The Test and Training data was combined and cleaned using R programming - **run_
 
 R file *run_analytics.R* can be executed after putting dataset in the working directory
 
-Following steps have been performed to clean and create a Tidy dataset 
+Following steps have been performed to clean and create a Tidy dataset :-
 - Copy Samsung Data set into the working directory
 - Read both Training and Test data set, subjects, activity labels into R objects
 - Appropriately labels the data set with descriptive variable names using colnames 
