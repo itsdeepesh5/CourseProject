@@ -1,46 +1,31 @@
-==================================================================
-Tidy Data creation for data collected using Human Activity Recognition Using Smartphones Dataset
-Version 1.0
-==================================================================
+**Tidy Data creation for data collected using Human Activity Recognition Using Smartphones Dataset (Version 1.0)**
 
-Tidy dataset Programmin - 
-DRana
-
-Original Dataset - 
-
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
-==================================================================
+*Tidy dataset Programming by  itsdeepesh5*
 
 
-The Test and Training data was combined and cleaned using R programming -run_analytics.R
+The Test and Training data was combined and cleaned using R programming - **run_analytics.R**
 
-Following steps have been performed to clean and create a Tidy dataset -
-1. Copy Samsung Data set into the working directory
-2. Read both Training and Test data set, subjects, activity labels into R objects
-3. Appropriately labels the data set with descriptive variable names using colnames 
-4. Add subjects details to x_test and x_train objects
-5. Add Activity details to x_test and x_train objects
-6. Merge both Test and Training dataset into one oject
-7. Join Merged dataset with Activity labels  using left_join on Activity ID - This will help all activity to use Activity Labels instead of IDs
-8. Search all column with colnames include word "mean" OR "std" i.e. Average and Standard Deviation 
-9. Add "SubjectID", "ActivityLabelName" and all mean and std column 
-10. Assign a groupby function for "SubjectID" and "ActivityLabelName" and calculate the mean for rest of the columns using summarise each
+R file *run_analytics.R* can be executed after putting dataset in the working directory
+
+Following steps have been performed to clean and create a Tidy dataset 
+- Copy Samsung Data set into the working directory
+- Read both Training and Test data set, subjects, activity labels into R objects
+- Appropriately labels the data set with descriptive variable names using colnames 
+- Add subjects details to x_test and x_train objects
+- Add Activity details to x_test and x_train objects
+- Merge both Test and Training dataset into one oject
+- Join Merged dataset with Activity labels  using left_join on Activity ID - This will help all activity to use Activity Labels instead of IDs
+- Search all column with colnames include word "mean" OR "std" i.e. Average and Standard Deviation 
+- Add "SubjectID", "ActivityLabelName" and all mean and std column 
+- Assign a groupby function for "SubjectID" and "ActivityLabelName" and calculate the mean for rest of the columns using summarise each
 
 
-For each record it is provided: 
-======================================
-   
 
 The Tiday dataset includes the following files:
-=========================================
-MyTidyData_CourseProject.txt
-README.md
-CookBook.pdf
+
+- MyTidyData_CourseProject.txt
+- README.md
+- CookBook.pdf
 
 License:
 ========
