@@ -3,9 +3,9 @@
 *Tidy dataset Programming by  itsdeepesh5*
 
 
-The Test and Training data was combined and cleaned using R programming - **run_analytics.R**
+The Test and Training data was combined and cleaned using R programming - **run_analysis.R**
 
-R file *run_analytics.R* can be executed after putting dataset in the working directory
+R file *run_analysis.R* can be executed after putting dataset in the working directory
 
 Following steps have been performed to clean and create a Tidy dataset :-
 - Copy Samsung Data set into the working directory
